@@ -94,23 +94,4 @@ choco install vscode -y
 choco install vscode-python -y
 choco install microsoft-windows-terminal -y
 
-###############################################################################
-# Create Desktop Shortcut
-###############################################################################
-if (Test-Path "C:\BGinfo\build.cfg" -PathType Leaf)
-{
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\Ghidra.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\ghidra\tools\ghidra_9.1.2_PUBLIC\ghidraRun.bat"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\x64dbg.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\x64dbg.portable\tools\release\x64\x64dbg.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\x32dbg.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\x64dbg.portable\tools\release\x32\x32dbg.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\OLLYDBG.lnk" -TargetPath "C:\Program Files (x86)\OllyDbg\OLLYDBG.EXE"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\HxD.lnk" -TargetPath "C:\Program Files\HxD\HxD.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\PEbear.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\pebear\tools\PE-bear.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\pestudio.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\PeStudio\tools\pestudio\pestudio.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\proexp.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\procexp\tools\procexp.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\Autoruns.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\AutoRuns\tools\Autoruns.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\Sysmon.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\sysmon\tools\Sysmon.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\Tcpview.lnk" -TargetPath "C:\ProgramData\chocolatey\lib\TcpView\Tools\Tcpview.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\notepad++.lnk" -TargetPath "C:\Program Files\Notepad++\notepad++.exe"
-Install-ChocolateyShortcut -ShortcutFilePath "C:\Users\IEUser\Desktop\Cmder.lnk" -TargetPath "C:\tools\Cmder\Cmder.exe"
-}
 Write-Host -NoNewline " - SentinelLabs RevCore Tools HAS COMPLETED! - "
