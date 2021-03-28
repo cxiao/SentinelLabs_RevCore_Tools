@@ -90,6 +90,8 @@ pip install --upgrade setuptools
 pip install pefile
 pip install pwntools
 pip install yara
+pip install frida-tools
+pip install qiling
 choco install vscode -y
 choco install vscode-python -y
 choco install microsoft-windows-terminal -y
