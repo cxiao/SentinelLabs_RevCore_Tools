@@ -51,7 +51,7 @@ reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v Hi
 # Set a nice S1 wallpaper : 
 write-host "Setting a nice wallpaper"
 $web_dl = new-object System.Net.WebClient
-$wallpaper_url = "https://raw.githubusercontent.com/SentineLabs/SentinelLabs_RevCore_Tools/master/Logo_Wallpaper_Desktop_1920x1080.png"
+$wallpaper_url = "https://raw.githubusercontent.com/cxiao/SentinelLabs_RevCore_Tools/cxiao-tools/kare-wall.png"
 $wallpaper_file = "C:\Users\Public\Pictures\101089633-48da3e80-356a-11eb-9d66-0cdf9da30220.png"
 $web_dl.DownloadFile($wallpaper_url, $wallpaper_file)
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "C:\Users\Public\Pictures\101089633-48da3e80-356a-11eb-9d66-0cdf9da30220.png" /f
