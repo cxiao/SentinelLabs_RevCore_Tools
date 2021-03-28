@@ -94,8 +94,11 @@ choco install pip -y
 python -m pip install --upgrade pip
 pip install --upgrade setuptools
 pip install pefile
+pip install pwntools
 pip install yara
-choco install notepadplusplus -y
+choco install vscode -y
+choco install vscode-python -y
+choco install microsoft-windows-terminal -y
 
 ###############################################################################
 # Create Desktop Shortcut
