@@ -65,10 +65,13 @@ reg add "HKEY_CURRENT_USER\Control Panel\Colors" /v Background /t REG_SZ /d "0 0
 choco feature enable -n allowGlobalConfirmation
 choco install checksum -y
 choco install 7zip.install -y
-choco install procexp -y
-choco install autoruns -y
-choco install tcpview -y
-choco install sysmon -y
+choco install sysinternals -y
+choco install processhacker -y
+
+choco install dnspyex -y
+choco install dotnet-5.0-runtime -y
+choco install dotnet-6.0-runtime -y
+
 choco install hxd -y
 choco install pebear -y
 choco install pestudio --ignore-checksums
